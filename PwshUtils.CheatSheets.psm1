@@ -78,7 +78,6 @@ Function Get-VimCheatSheet {
 	)
 
 	$data = Get-GistFile -Url 'https://gist.githubusercontent.com/gvnadir/8d240f6a885b301a7cbbfdcb563d4600/raw/VimCheatSheet.csv'
-
 	if ($Filter) {
 		$data = $data | Where-Object {
 			$_.Command -ilike "*$Filter*" -or
