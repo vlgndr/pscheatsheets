@@ -6,10 +6,10 @@
 
 ## 📦 Installation
 
-Install the module from PowerShell Gallery:
 
 ```powershell
-Install-Module -Name PwshUtils.CheatSheets
+git clone https://github.com/vlgndr/pwshutils-cheatsheets.git
+Import-Module .\pwshutils-cheatsheets\PwshUtils.CheatSheets.psd1
 ```
 
 ---
