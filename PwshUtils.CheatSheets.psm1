@@ -241,17 +241,16 @@ You can optionally provide a case-insensitive filter to search within the 'Name'
 A text string to filter the output. The filter is applied case-insensitively to the 'Name','Command' and 'Description' column.
 
 .EXAMPLE
-Get-GitCommand
+Get-GoogleDorkingCommand
 
-Displays the full list of Git commands.
+Displays the full list of Google Dorking commands.
 
 .EXAMPLE
-Get-GitCommand tag
+Get-GoogleDorkingCommand type
 
-Name        : Tag commit
-Command     : git tag <tag> <ref>
-Description : Create a tag pointing to a specific commit
-Example     : git tag v1 HEAD^
+Name               Command   Description                    Example
+----               -------   -----------                    -------
+Specific file type filetype: Search for specific file types filetype:pdf
 
 .NOTES
 Author: vlgndr
@@ -264,6 +263,53 @@ Function Get-GitCommand {
 	)
 
 	$data = Get-GistFile -Url 'https://gist.githubusercontent.com/vlgndr/9042ded914cdc20ad49231b1e1ebf4de/raw/5e97ff57344a1175a30a94ee2e15d815262ebf63/git.csv'
+
+	if ($Filter) {
+		$data = $data | Where-Object {
+			$_.Name -ilike "*$Filter*" -or
+			$_.Command -ilike "*$Filter*" -or
+			$_.Description -ilike "*$Filter*"
+		}
+	}
+	
+	$data
+}
+
+<#
+.SYNOPSIS
+Displays a list Google Dorking commands.
+
+.DESCRIPTION
+This function provides a quick reference of Google Dorking commands.
+You can optionally provide a case-insensitive filter to search within the 'Name', 'Command' and 'Description' column.
+
+.PARAMETER Filter
+A text string to filter the output. The filter is applied case-insensitively to the 'Name','Command' and 'Description' column.
+
+.EXAMPLE
+Get-GoogleDorkingCommand
+
+Displays the full list of Google Dorking commands.
+
+.EXAMPLE
+Get-GoogleDorkingCommand
+
+Name        : Tag commit
+Command     : git tag <tag> <ref>
+Description : Create a tag pointing to a specific commit
+Example     : git tag v1 HEAD^
+
+.NOTES
+Author: vlgndr
+Module: PwshUtils.CheatSheets
+#>
+Function Get-GoogleDorkingCommand {
+	param(
+		[Parameter(Position = 0)]
+		[string]$Filter
+	)
+
+	$data = Get-GistFile -Url 'https://gist.githubusercontent.com/vlgndr/69391a9ee496d6e8e0505bade0531c5f/raw/e5ac6a010a7b7c668b30717abc1b8922ce88bf3a/google-dorking.csv'
 
 	if ($Filter) {
 		$data = $data | Where-Object {

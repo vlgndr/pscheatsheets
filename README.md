@@ -56,6 +56,22 @@ Get-RegexExample
 Get-RegexExample swap
 ```
 
+### `Get-GitCommand [<Filter>]`
+Displays Git commands.
+
+```powershell
+Get-GitCommand
+Get-GitCommand tag
+```
+
+### `Get-GoogleDorkingCommand [<Filter>]`
+Displays Google Dorking commands.
+
+```powershell
+Get-GoogleDorkingCommand
+Get-GoogleDorkingCommand type
+```
+
 ---
 
 ## 🔎 Features
