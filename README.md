@@ -52,6 +52,14 @@ Get-DockerCommand
 Get-DockerCommand images
 ```
 
+### `Get-RegexExample [<Filter>]`
+Displays Regex examples. 
+
+```powershell
+Get-RegexExample
+Get-RegexExample swap
+```
+
 ---
 
 ## 🔎 Features

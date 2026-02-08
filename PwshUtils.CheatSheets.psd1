@@ -73,7 +73,8 @@
     'Get-VimCommand',
     'Get-WindowsCommand',
     'Get-WinLinuxMap',
-    'Get-DockerCommand'
+    'Get-DockerCommand',
+    'Get-RegexExample'
   )
 
   # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
@@ -113,8 +114,8 @@
 
       # ReleaseNotes of this module
       ReleaseNotes = @'
-      ### 1.2.0
-      - Add Get-DockerCommand function
+      ### 1.3.0
+      - Add Get-RegexExample
 '@
 
       # Prerelease string of this module
