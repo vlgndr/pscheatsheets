@@ -78,7 +78,7 @@ Get-GoogleDorkingCommand type
 
 - Simple, readable output
 - Case-insensitive filtering for fast lookup
-- Ideal for terminal users, admins, and Vim learners
+- Ideal for terminal users, admins, Vim learners etc.
 - Data is fetched from trusted, readonly sources (author-maintained GitHub Gists)
 
 ---
@@ -86,10 +86,3 @@ Get-GoogleDorkingCommand type
 ## 📄 License
 
 MIT License
-
----
-
-## 🔗 Links
-
-- [PowerShell Gallery](https://www.powershellgallery.com/packages/PwshUtils.CheatSheets)
-- [GitHub Repository](https://github.com/vlgndr/pwshutils-cheatsheets)
