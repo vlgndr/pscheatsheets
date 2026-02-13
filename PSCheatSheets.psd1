@@ -109,7 +109,7 @@
       # LicenseUri = ''
 
       # A URL to the main website for this project.
-      ProjectUri   = 'https://github.com/VLGNDR/pwshutils-cheatsheets'
+      ProjectUri   = 'https://github.com/VLGNDR/pscheatsheets'
 
       # A URL to an icon representing this module.
       # IconUri = ''
