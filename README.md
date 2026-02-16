@@ -80,9 +80,3 @@ Get-GoogleDorkingCommand type
 - Case-insensitive filtering for fast lookup
 - Ideal for terminal users, admins, Vim learners etc.
 - Data is fetched from trusted, readonly sources (author-maintained GitHub Gists)
-
----
-
-## 📄 License
-
-MIT License
