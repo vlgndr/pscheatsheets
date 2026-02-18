@@ -25,7 +25,7 @@ Enter Container Shell docker container exec -it <containerid> /bin/sh Open an in
 Filters the list to show commands containing 'shell' in either the name, command or description itself.
 
 .NOTES
-Author: vlgndr
+Author: gianlucanadir
 Module: PwshUtils.CheatSheets
 #>
 Function Get-DockerCommand {
@@ -34,7 +34,7 @@ Function Get-DockerCommand {
 		[string]$Filter
 	)
 
-  $data = Get-FilteredData -Url 'https://gist.githubusercontent.com/vlgndr/1aaada0abbd7eb7114c9fee95151622d/raw/c61a5cb64b21982e3b76e10cff12f7bc4cefc760/docker.csv' -Filter $Filter -Columns Name,Command,Description
+  $data = Get-FilteredData -Url 'https://gist.githubusercontent.com/gianlucanadir/1aaada0abbd7eb7114c9fee95151622d/raw/c61a5cb64b21982e3b76e10cff12f7bc4cefc760/docker.csv' -Filter $Filter -Columns Name,Command,Description
 
 	$data
 }

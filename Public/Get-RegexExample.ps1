@@ -24,7 +24,7 @@ VimCommand : :%s/\(\w\+\)\s\+\(\w\+\)/\2 \1/g
 Example    : hello world → world hello
 
 .NOTES
-Author: vlgndr
+Author: gianlucanadir
 Module: PwshUtils.CheatSheets
 #>
 Function Get-RegexExample {
@@ -33,7 +33,7 @@ Function Get-RegexExample {
 		[string]$Filter
 	)
 
-  $data = Get-FilteredData -Url 'https://gist.githubusercontent.com/vlgndr/c953882a43cc7ddfb186ea5e6d1daa1a/raw/9acb14826bdc9b3ac658824235c5fac6cb4f8d3e/regex-examples.csv' -Filter $Filter -Columns Name
+  $data = Get-FilteredData -Url 'https://gist.githubusercontent.com/gianlucanadir/c953882a43cc7ddfb186ea5e6d1daa1a/raw/9acb14826bdc9b3ac658824235c5fac6cb4f8d3e/regex-examples.csv' -Filter $Filter -Columns Name
 
 	$data
 }

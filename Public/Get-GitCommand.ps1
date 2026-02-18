@@ -22,7 +22,7 @@ Name               Command   Description                    Example
 Specific file type filetype: Search for specific file types filetype:pdf
 
 .NOTES
-Author: vlgndr
+Author: gianlucanadir
 Module: PwshUtils.CheatSheets
 #>
 Function Get-GitCommand {
@@ -31,7 +31,7 @@ Function Get-GitCommand {
 		[string]$Filter
 	)
 
-  $data = Get-FilteredData -Url 'https://gist.githubusercontent.com/vlgndr/9042ded914cdc20ad49231b1e1ebf4de/raw/5e97ff57344a1175a30a94ee2e15d815262ebf63/git.csv' -Filter $Filter -Columns Name,Command,Description
+  $data = Get-FilteredData -Url 'https://gist.githubusercontent.com/gianlucanadir/9042ded914cdc20ad49231b1e1ebf4de/raw/5e97ff57344a1175a30a94ee2e15d815262ebf63/git.csv' -Filter $Filter -Columns Name,Command,Description
 
 	$data
 }

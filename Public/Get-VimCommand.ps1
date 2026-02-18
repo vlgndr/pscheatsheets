@@ -21,7 +21,7 @@ Get-VimCommand gg
 Displays only the Vim commands that contain 'gg'.
 
 .NOTES
-Author: vlgndr
+Author: gianlucanadir
 Module: PwshUtils.CheatSheets
 #>
 Function Get-VimCommand {
@@ -30,7 +30,7 @@ Function Get-VimCommand {
 		[string]$Filter
 	)
 
-  $data = Get-FilteredData -Url 'https://gist.githubusercontent.com/vlgndr/8d240f6a885b301a7cbbfdcb563d4600/raw/VimCheatSheet.csv' -Filter $Filter -Columns Command,Description
+  $data = Get-FilteredData -Url 'https://gist.githubusercontent.com/gianlucanadir/8d240f6a885b301a7cbbfdcb563d4600/raw/VimCheatSheet.csv' -Filter $Filter -Columns Command,Description
 
 	$data
 }

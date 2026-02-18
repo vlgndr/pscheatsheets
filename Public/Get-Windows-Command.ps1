@@ -21,7 +21,7 @@ Get-WindowsCommand task
 Filters the list to show commands containing 'task' in either the name or the command itself.
 
 .NOTES
-Author: vlgndr
+Author: gianlucanadir
 Module: PwshUtils.CheatSheets
 #>
 Function Get-WindowsCommand {
@@ -30,7 +30,7 @@ Function Get-WindowsCommand {
 		[string]$Filter
 	)
 
-  $data = Get-FilteredData -Url 'https://gist.githubusercontent.com/vlgndr/46f0ccd9b7d58d17d51e73e972e75caa/raw/WindowsRun.csv' -Filter $Filter -Columns Name,Command,Description
+  $data = Get-FilteredData -Url 'https://gist.githubusercontent.com/gianlucanadir/46f0ccd9b7d58d17d51e73e972e75caa/raw/WindowsRun.csv' -Filter $Filter -Columns Name,Command,Description
 
 	$data
 }

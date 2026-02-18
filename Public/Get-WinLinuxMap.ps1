@@ -22,7 +22,7 @@ Get-WinLinuxMap ping
 Filters the list to show only commands that include the word 'ping' in either the Windows or Linux command fields.
 
 .NOTES
-Author: vlgndr
+Author: gianlucanadir
 Module: PwshUtils.CheatSheets
 #>
 Function Get-WinLinuxMap {
@@ -31,7 +31,7 @@ Function Get-WinLinuxMap {
 		[string]$Filter
 	)
 
-  $data = Get-FilteredData -Url 'https://gist.githubusercontent.com/vlgndr/c9bcbc3350158726aaa67b1ae2103c91/raw/PowerShellLinuxMap.csv' -Filter $Filter -Columns Windows,Linux,Operation,Description
+  $data = Get-FilteredData -Url 'https://gist.githubusercontent.com/gianlucanadir/c9bcbc3350158726aaa67b1ae2103c91/raw/PowerShellLinuxMap.csv' -Filter $Filter -Columns Windows,Linux,Operation,Description
 
 	$data 
 }
