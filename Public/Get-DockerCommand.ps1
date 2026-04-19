@@ -34,7 +34,7 @@ Function Get-DockerCommand {
 		[string]$Filter
 	)
 
-  $data = Get-FilteredData -Url 'https://gist.githubusercontent.com/gianlucanadir/1aaada0abbd7eb7114c9fee95151622d/raw/c61a5cb64b21982e3b76e10cff12f7bc4cefc760/docker.csv' -Filter $Filter -Columns Name,Command,Description
+  $data = Get-FilteredData -Url 'https://gist.githubusercontent.com/gianlucanadir/1aaada0abbd7eb7114c9fee95151622d/raw/docker.csv' -Filter $Filter -Columns Name,Command,Description
 
 	$data
 }
